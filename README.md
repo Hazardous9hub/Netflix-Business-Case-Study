@@ -1,614 +1,392 @@
-\# 🎬 Netflix - Content Strategy \& Business Analytics
-
-
+# 🎬 Netflix - Content Strategy & Business Analytics
 
 <div align="center">
 
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Data%20Analysis-4DABCF?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-pink?logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4EAEAA?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
 
-
-!\[Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python\&logoColor=white)
-
-!\[Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?logo=pandas\&logoColor=white)
-
-!\[Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter\&logoColor=white)
-
-!\[Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-pink?logo=python\&logoColor=white)
-
-!\[Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4EAEAA?logo=python\&logoColor=white)
-
-!\[NumPy](https://img.shields.io/badge/NumPy-Data%20Analysis-4DABCF?logo=numpy\&logoColor=white)
-
-
-
-\*\*A Data-Driven Netflix Content Strategy Case Study using Python \& Exploratory Data Analysis\*\*
-
-
+**A Data-Driven Netflix Content Strategy Case Study using Python & Exploratory Data Analysis**
 
 </div>
 
+---
 
+## 📋 Table of Contents
 
-\---
+- [🎯 Project Overview](#-project-overview)
+- [📊 Dataset](#-dataset)
+- [🔍 Business Problem](#-business-problem)
+- [❓ Business Questions](#-business-questions)
+- [📈 Analysis Performed](#-analysis-performed)
+- [💡 Key Findings](#-key-findings)
+- [🎯 Business Recommendations](#-business-recommendations)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [🚀 How to Use](#-how-to-use)
+- [👨‍💻 Author](#-author)
 
+---
 
+## 🎯 Project Overview
 
-\## 📋 Table of Contents
+Netflix is one of the world's leading streaming platforms, offering a large catalogue of Movies and TV Shows across multiple countries, genres, ratings and creators.
 
+This project performs **Exploratory Data Analysis (EDA)** on Netflix's content catalogue to identify patterns in content type, countries, genres, ratings, release years, creators and catalogue growth.
 
+The objective is to generate **data-driven insights that could support Netflix's content production and geographic growth decisions**.
 
-\- \[🎯 Project Overview](#-project-overview)
+### 🎯 Business Objective
 
-\- \[📊 Dataset](#-dataset)
+> Analyze the data and generate insights that could help Netflix in deciding which type of shows/movies to produce and how they can grow the business in different countries.
 
-\- \[🔍 Business Problem](#-business-problem)
+---
 
-\- \[❓ Business Questions](#-business-questions)
+## 📊 Dataset
 
-\- \[📈 Analysis](#-analysis)
+The dataset contains **8,807 Netflix titles across 12 variables**.
 
-\- \[💡 Key Findings](#-key-findings)
-
-\- \[🎯 Business Recommendations](#-business-recommendations)
-
-\- \[🛠️ Tech Stack](#️-tech-stack)
-
-\- \[📁 Project Structure](#-project-structure)
-
-\- \[🚀 How to Use](#-how-to-use)
-
-\- \[👨‍💻 Author](#-author)
-
-\- \[📄 License](#-license)
-
-
-
-\---
-
-
-
-\## 🎯 Project Overview
-
-
-
-This project analyzes Netflix's catalogue of Movies and TV Shows to understand its content distribution, geographic reach, genres, ratings, creators and historical catalogue growth.
-
-
-
-The objective is to use exploratory data analysis to generate insights that could support Netflix's content and market strategy.
-
-
-
-\### 🎯 Business Objective
-
-
-
-> Analyze the data and generate insights that could help Netflix decide which type of shows/movies to produce and how they can grow the business in different countries.
-
-
-
-\---
-
-
-
-\## 📊 Dataset
-
-
-
-The dataset contains \*\*8,807 Netflix titles across 12 variables\*\*.
-
-
-
-\### 📌 Dataset Features
-
-
+### 📌 Dataset Features
 
 | Feature | Description |
-
 |---|---|
-
-| `show\_id` | Unique identifier for the title |
-
+| `show_id` | Unique ID for every Movie / TV Show |
 | `type` | Movie or TV Show |
+| `title` | Title of the Movie / TV Show |
+| `director` | Director of the Movie / TV Show |
+| `cast` | Actors involved |
+| `country` | Country where the content was produced |
+| `date_added` | Date the title was added to Netflix |
+| `release_year` | Original release year |
+| `rating` | TV / content rating |
+| `duration` | Movie duration or number of seasons |
+| `listed_in` | Genre / category |
+| `description` | Summary description |
 
-| `title` | Name of the title |
+### 📁 Dataset
 
-| `director` | Director(s) associated with the title |
+The dataset used in this project is available in:
 
-| `cast` | Cast members |
+`data/netflix_titles.csv`
 
-| `country` | Country/countries associated with the title |
+---
 
-| `date\_added` | Date the title was added to Netflix |
+## 🔍 Business Problem
 
-| `release\_year` | Original release year |
+Netflix has a large and diverse content catalogue covering different:
 
-| `rating` | Content rating |
+- 🌍 Countries
+- 🎬 Content types
+- 🎭 Genres
+- 🔞 Ratings
+- 🎥 Directors
+- 👥 Cast members
 
-| `duration` | Movie duration or TV Show seasons |
+The business challenge is to understand the composition of this catalogue and identify patterns that can support decisions around:
 
-| `listed\_in` | Genre/category information |
+- Content production
+- Genre strategy
+- Regional expansion
+- Movie vs TV Show investment
+- Audience targeting
 
-| `description` | Description of the title |
+---
 
+## ❓ Business Questions
 
+This case study explores the following questions:
 
-\---
+1. What is the distribution of Movies vs TV Shows?
+2. How has Netflix's catalogue changed over time?
+3. Which countries contribute the most content?
+4. Which genres are most represented?
+5. Which ratings dominate the catalogue?
+6. Which directors appear most frequently?
+7. Which actors appear most frequently?
+8. How does content type vary across countries?
+9. When are titles most frequently added to Netflix?
+10. How does the catalogue differ between Movies and TV Shows?
 
+---
 
+## 📈 Analysis Performed
 
-\## 🔍 Business Problem
-
-
-
-Netflix has a large and diverse content catalogue spanning multiple countries, genres and content types.
-
-
-
-The business challenge is to understand the composition of this catalogue and identify patterns that could help inform decisions around:
-
-
-
-\- Content production
-
-\- Genre strategy
-
-\- Regional expansion
-
-\- Movie vs TV Show investment
-
-\- Audience targeting
-
-
-
-\---
-
-
-
-\## ❓ Business Questions
-
-
-
-The analysis addresses questions such as:
-
-
-
-1\. What is the distribution of Movies vs TV Shows?
-
-2\. How has Netflix's catalogue changed over time?
-
-3\. Which countries contribute the most content?
-
-4\. Which genres are most represented?
-
-5\. Which ratings dominate the catalogue?
-
-6\. Which directors and actors appear most frequently?
-
-7\. How does content type vary across countries?
-
-8\. When are titles most frequently added to Netflix?
-
-9\. How does the catalogue differ between Movies and TV Shows?
-
-
-
-\---
-
-
-
-\## 📈 Analysis
-
-
-
-The project follows a structured Exploratory Data Analysis workflow:
-
-
+The analysis follows a structured Exploratory Data Analysis workflow:
 
 ```text
-
 Business Understanding
-
-&#x20;       ↓
-
+        ↓
 Data Loading
-
-&#x20;       ↓
-
+        ↓
 Data Understanding
-
-&#x20;       ↓
-
+        ↓
 Data Quality Checks
-
-&#x20;       ↓
-
+        ↓
 Data Cleaning
-
-&#x20;       ↓
-
+        ↓
 Feature Engineering
-
-&#x20;       ↓
-
-Exploratory Data Analysis
-
-&#x20;       ↓
-
+        ↓
 Univariate Analysis
-
-&#x20;       ↓
-
+        ↓
 Bivariate Analysis
-
-&#x20;       ↓
-
+        ↓
 Multivariate Analysis
-
-&#x20;       ↓
-
+        ↓
 Business Insights
-
-&#x20;       ↓
-
+        ↓
 Recommendations
+```
 
-🔬 Analysis Areas
+### 🔎 Major Analysis Areas
 
-Dataset structure and data types
+- Dataset structure and characteristics
+- Data types and descriptive statistics
+- Missing-value analysis
+- Duplicate-value analysis
+- Movie vs TV Show distribution
+- Release-year analysis
+- Date-added analysis
+- Rating distribution
+- Country analysis
+- Genre analysis
+- Director analysis
+- Cast analysis
+- Country × Content Type analysis
+- Historical catalogue growth
 
-Missing-value analysis
+---
 
-Duplicate analysis
+## 💡 Key Findings
 
-Movie vs TV Show distribution
-
-Release-year analysis
-
-Catalogue additions over time
-
-Ratings analysis
-
-Country analysis
-
-Genre analysis
-
-Director analysis
-
-Cast analysis
-
-Country × Content Type analysis
-
-💡 Key Findings
-
-
-
-The case-study analysis identifies several notable patterns:
-
-
-
-🎬 Content Mix
-
-
+### 🎬 Movies vs TV Shows
 
 The dataset contains:
 
+| Content Type | Titles |
+|---|---:|
+| 🎬 Movies | **6,131** |
+| 📺 TV Shows | **2,676** |
 
+Movies therefore form the larger share of the Netflix catalogue represented in this dataset.
 
-6,131 Movies
+---
 
-2,676 TV Shows
+### 🌍 Geographic Distribution
 
+After preprocessing the country information, the analysis identifies content associated with **124 countries**.
 
+The United States and India are among the largest contributors to the catalogue, followed by several other major international markets.
 
-Movies therefore represent the larger share of the catalogue in this dataset.
+---
 
+### 🎭 Genre Distribution
 
+The analysis identifies several highly represented categories, including:
 
-🌍 Geographic Distribution
+- International Movies
+- Dramas
+- Comedies
+- International TV Shows
+- Documentaries
 
+---
 
+### 🔞 Ratings
 
-After preprocessing the country field, the analysis identifies content associated with 124 countries.
+**TV-MA** is identified as the most common rating in the analysed catalogue.
 
+---
 
+### 📅 Catalogue Growth
 
-The United States and India are among the largest contributors to the catalogue.
+The number of titles added to Netflix increased rapidly during the late 2010s.
 
+The case-study analysis identifies **2019 as a peak year for catalogue additions**.
 
+---
 
-🎭 Genre Distribution
+### 🎥 Creator Diversity
 
+The catalogue contains a large number of directors and cast members, indicating a broad creator ecosystem rather than dependence on only a small group of creators.
 
+---
 
-Major categories represented in the catalogue include:
+## ⚠️ Analytical Note
 
+This project analyses **Netflix catalogue metadata**.
 
+It does **not** contain individual viewer behaviour such as:
 
-International Movies
+- Watch time
+- Completion rate
+- User ratings
+- Retention
+- Churn
+- Subscriber-level engagement
 
-Dramas
-
-Comedies
-
-International TV Shows
-
-Documentaries
-
-🔞 Ratings
-
-
-
-TV-MA is identified as the most common rating in the analysed catalogue.
-
-
-
-📅 Catalogue Growth
-
-
-
-The historical date\_added analysis shows substantial catalogue expansion during the late 2010s, with 2019 identified as a peak year in the case-study analysis.
-
-
-
-⚠️ Analytical Note
-
-
-
-This dataset describes Netflix's content catalogue, not individual user behaviour.
-
-
-
-Therefore, catalogue frequency should not automatically be interpreted as viewer preference.
-
-
+Therefore, catalogue frequency should not automatically be interpreted as direct evidence of viewer preference.
 
 For example:
 
+> A genre appearing frequently indicates strong representation in the catalogue, but does not by itself prove that viewers prefer that genre.
 
+---
 
-A genre appearing frequently indicates strong catalogue representation, but does not directly prove that viewers prefer that genre.
+## 🎯 Business Recommendations
 
+Based on the case-study analysis:
 
+### 🎬 Content Strategy
 
-Viewer-level variables such as:
+- Continue investing in TV Shows while maintaining a strong Movie catalogue.
+- Continue developing content across popular genres such as Drama, Comedy and International Movies.
+- Maintain a balance between Movies and TV Shows to serve different audience preferences.
+- Continue expanding high-quality original content.
 
+### 🌍 Geographic Strategy
 
+- Increase focus on localized content in markets such as India, Japan and South Korea.
+- Use country-level content analysis to identify regional opportunities.
+- Combine country, genre and content-type information when evaluating expansion opportunities.
 
-Watch time
+### 🎥 Creator Strategy
 
-Completion rate
+- Continue building relationships with successful directors and actors.
+- Maintain a diverse creator ecosystem to support a broad content catalogue.
 
-Engagement
+### 👨‍👩‍👧 Audience Expansion
 
-Retention
+- Consider increasing family and children's content to reach broader audience segments.
 
-Churn
+### 📊 Future Data Strategy
 
-Subscriber behaviour
+For stronger business decisions, catalogue analysis should ideally be combined with:
 
+- Viewing behaviour
+- Watch time
+- Subscriber growth
+- Engagement
+- Completion rate
+- Retention
+- Churn
 
+---
 
-would be required to make stronger conclusions about audience demand.
+## 🛠️ Tech Stack
 
-
-
-🎯 Business Recommendations
-
-🎬 Content Strategy
-
-Maintain a balanced portfolio of Movies and TV Shows.
-
-Continue evaluating opportunities in high-representation genres.
-
-Identify catalogue gaps by country and genre.
-
-Consider localized content strategies for regional markets.
-
-🌍 Geographic Strategy
-
-Evaluate country-level catalogue representation when considering regional expansion.
-
-Combine country, genre and content-type information rather than relying on a single metric.
-
-Explore opportunities for localized production in underrepresented markets.
-
-📊 Data-Driven Decision Making
-
-
-
-For future strategic decisions, catalogue analysis should ideally be combined with:
-
-
-
-Viewing behaviour
-
-Subscriber growth
-
-Watch time
-
-Retention
-
-Completion rate
-
-Content-level engagement
-
-🛠️ Tech Stack
-
+```text
 ├── 🐍 Python
-
 ├── 📊 Pandas
-
 ├── 🔢 NumPy
-
 ├── 📈 Matplotlib
-
 ├── 🎨 Seaborn
+└── 📓 Jupyter Notebook / Google Colab
+```
 
-├── 📓 Jupyter Notebook
+---
 
-└── 🔬 Exploratory Data Analysis
+## 📁 Project Structure
 
-📁 Project Structure
-
+```text
 Netflix-Business-Case-Study/
-
 │
-
 ├── data/
-
-│   └── netflix\_titles.csv
-
+│   └── netflix_titles.csv
 │
-
 ├── notebooks/
-
-│   └── Netflix\_Business\_Case\_Study.ipynb
-
+│   └── Netflix_Business_Case_Study.ipynb
 │
-
 ├── reports/
-
-│   └── SHIVALING\_NETFLIX Business Case Study.pdf
-
+│   └── SHIVALING_NETFLIX Business Case Study.pdf
 │
-
 ├── src/
-
 │
-
-├── .gitignore
-
 ├── .gitattributes
-
-├── requirements.txt
-
+├── .gitignore
 ├── README.md
+└── requirements.txt
+```
 
-└── LICENSE
+---
 
-🚀 How to Use
+## 🚀 How to Use
 
-Option 1 — View the Project
+### 📖 Explore the Project
 
+You can explore the following files directly in this repository:
 
+- 📓 **Python Notebook** — complete exploratory analysis
+- 📊 **Netflix Dataset** — source data used for the analysis
+- 📄 **PDF Report** — detailed case-study report
 
-Explore the repository files directly on GitHub:
-
-
-
-📓 Python Notebook — complete analysis
-
-📊 Dataset — Netflix catalogue data
-
-📄 PDF Report — case-study report
-
-Option 2 — Run Locally
-
-
+### 💻 Run Locally
 
 Clone the repository:
 
-
-
+```bash
 git clone https://github.com/Hazardous9hub/Netflix-Business-Case-Study.git
-
-
+```
 
 Navigate into the project:
 
-
-
+```bash
 cd Netflix-Business-Case-Study
+```
 
+Install the required libraries:
 
-
-Install dependencies:
-
-
-
+```bash
 pip install -r requirements.txt
+```
 
+Launch Jupyter Notebook:
 
-
-Launch Jupyter:
-
-
-
+```bash
 jupyter notebook
-
-
+```
 
 Open:
 
+```text
+notebooks/Netflix_Business_Case_Study.ipynb
+```
 
+---
 
-notebooks/Netflix\_Business\_Case\_Study.ipynb
-
-👨‍💻 Author
+## 👨‍💻 Author
 
 <div align="center">
 
+**Shivaling** 🧑‍💻
 
+*Data Analytics | Data Science Enthusiast*
 
-Shivaling 🧑‍💻
-
-
-
-Data Analytics | Data Science Enthusiast
-
-
-
-🐙 GitHub: Hazardous9hub
-
-
-
-💼 LinkedIn: Shivaling Battarki
-
-
+🐙 GitHub: **Hazardous9hub**
 
 </div>
 
-🛠️ Skills Demonstrated
+### 🛠️ Skills Demonstrated
 
-✅ Exploratory Data Analysis
+- ✅ Exploratory Data Analysis
+- ✅ Data Cleaning
+- ✅ Data Quality Analysis
+- ✅ Missing Value Analysis
+- ✅ Feature Engineering
+- ✅ Data Visualization
+- ✅ Categorical Analysis
+- ✅ Business Analytics
+- ✅ Insight Generation
+- ✅ Business Recommendations
 
-✅ Data Cleaning
-
-✅ Missing Value Analysis
-
-✅ Feature Engineering
-
-✅ Data Visualization
-
-✅ Categorical Analysis
-
-✅ Business Analytics
-
-✅ Insight Generation
-
-✅ Business Recommendations
-
-📄 License
-
-
-
-This project is licensed under the MIT License.
-
-
+---
 
 <div align="center">
 
-
-
 ⭐ If you find this project useful, consider starring the repository.
 
+**Made with ❤️ using Python & Data Analytics**
 
-
-Made with ❤️ using Python \& Data Analytics
-
-
-
-</div> ```
-
-
-
+</div>
