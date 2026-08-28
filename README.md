@@ -11,7 +11,7 @@
 
 **A Data-Driven Netflix Content Strategy Case Study using Python & Exploratory Data Analysis**
 
-**Quick access:** [📓 View the notebook](./notebooks/Netflix_Business_Case_Study.ipynb) · [📊 View the dataset](./data/netflix_titles.csv) · [📄 Read the PDF report](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf)
+**Quick access:** [📓 View the notebook](./notebooks/Netflix_Business_Case_Study.ipynb) · [📊 View the dataset](./data/netflix.csv) · [📄 Read the PDF report](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf)
 
 ---
 
@@ -85,7 +85,7 @@ The dataset contains **8,807 Netflix titles across 12 variables**.
 
 The dataset used in this project is available in:
 
-[📊 Open the Netflix dataset](./data/netflix_titles.csv)
+[📊 Open the Netflix dataset](./data/netflix.csv)
 
 ---
 
@@ -309,7 +309,7 @@ For stronger business decisions, catalogue analysis should ideally be combined w
 Netflix-Business-Case-Study/
 │
 ├── data/
-│   └── netflix_titles.csv
+│   └── netflix.csv
 │
 ├── notebooks/
 │   └── Netflix_Business_Case_Study.ipynb
@@ -332,7 +332,7 @@ Netflix-Business-Case-Study/
 You can explore the following files directly in this repository:
 
 - [📓 **Python Notebook**](./notebooks/Netflix_Business_Case_Study.ipynb) — complete exploratory analysis
-- [📊 **Netflix Dataset**](./data/netflix_titles.csv) — source data used for the analysis
+- [📊 **Netflix Dataset**](./data/netflix.csv) — source data used for the analysis
 - [📄 **PDF Report**](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf) — detailed case-study report
 
 ### 💻 Run Locally
