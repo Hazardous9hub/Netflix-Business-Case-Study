@@ -11,12 +11,27 @@
 
 **A Data-Driven Netflix Content Strategy Case Study using Python & Exploratory Data Analysis**
 
+**Quick access:** [📓 View the notebook](./notebooks/Netflix_Business_Case_Study.ipynb) · [📊 View the dataset](./data/netflix_titles.csv) · [📄 Read the PDF report](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf)
+
+---
+
+## ⭐ Project Highlights
+
+- Analysed **8,807 Netflix titles** across **12 catalogue variables** using Python-based exploratory data analysis.
+- Found that the catalogue contains **6,131 Movies** and **2,676 TV Shows**.
+- Preprocessed country data to examine content associated with **124 countries**.
+- Identified **2019** as the peak year for titles added in the analysed catalogue.
+- Evaluated catalogue patterns across content type, genre, rating, country, creators, and time.
+
+> **Scope note:** These findings describe catalogue metadata—not viewer behaviour or preferences.
+
 </div>
 
 ---
 
 ## 📋 Table of Contents
 
+- [⭐ Project Highlights](#-project-highlights)
 - [🎯 Project Overview](#-project-overview)
 - [📊 Dataset](#-dataset)
 - [🔍 Business Problem](#-business-problem)
@@ -70,7 +85,7 @@ The dataset contains **8,807 Netflix titles across 12 variables**.
 
 The dataset used in this project is available in:
 
-`data/netflix_titles.csv`
+[📊 Open the Netflix dataset](./data/netflix_titles.csv)
 
 ---
 
@@ -318,9 +333,9 @@ Netflix-Business-Case-Study/
 
 You can explore the following files directly in this repository:
 
-- 📓 **Python Notebook** — complete exploratory analysis
-- 📊 **Netflix Dataset** — source data used for the analysis
-- 📄 **PDF Report** — detailed case-study report
+- [📓 **Python Notebook**](./notebooks/Netflix_Business_Case_Study.ipynb) — complete exploratory analysis
+- [📊 **Netflix Dataset**](./data/netflix_titles.csv) — source data used for the analysis
+- [📄 **PDF Report**](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf) — detailed case-study report
 
 ### 💻 Run Locally
 
