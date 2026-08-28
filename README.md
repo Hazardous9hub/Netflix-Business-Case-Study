@@ -8,10 +8,11 @@
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-pink?logo=python&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-4EAEAA?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
+[![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?logo=googlecolab&logoColor=fff)](#)
 
 **A Data-Driven Netflix Content Strategy Case Study using Python & Exploratory Data Analysis**
 
-**Quick access:** [📓 View the notebook](./notebooks/Netflix_Business_Case_Study.ipynb) · [📊 View the dataset](./data/netflix.csv) · [📄 Read the PDF report](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf)
+**Quick access:** [📓 View the notebook](./notebooks/Netflix_Business_Case_Study.ipynb) · [![Open Notebook In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hazardous9hub/Netflix-Business-Case-Study/blob/main/notebooks/Netflix_Business_Case_Study.ipynb) ·  [📊 View the dataset](./data/netflix.csv) · [📄 Read the PDF report](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf)
 
 ---
 
@@ -41,6 +42,7 @@
 - [🎯 Business Recommendations](#-business-recommendations)
 - [🛠️ Tech Stack](#️-tech-stack)
 - [📁 Project Structure](#-project-structure)
+- [☁️ Run in Google Colab](#️-run-in-google-colab)
 - [🚀 How to Use](#-how-to-use)
 - [👨‍💻 Author](#-author)
 
@@ -298,7 +300,7 @@ For stronger business decisions, catalogue analysis should ideally be combined w
 ├── 🔢 NumPy
 ├── 📈 Matplotlib
 ├── 🎨 Seaborn
-└── 📓 Jupyter Notebook / Google Colab
+└── 📓 Jupyter Notebook & Google Colab
 ```
 
 ---
@@ -327,7 +329,15 @@ Netflix-Business-Case-Study/
 
 ## 🚀 How to Use
 
-### 📖 Explore the Project
+### Option 1: ☁️ Run Analysis in Google Colab
+
+Run the complete analysis in your browser—no local installation required:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hazardous9hub/Netflix-Business-Case-Study/blob/main/notebooks/Netflix_Business_Case_Study.ipynb)
+
+> In Colab, select **Runtime → Run all** to execute the notebook.
+
+### Option 2: 📖 Explore the Project
 
 You can explore the following files directly in this repository:
 
@@ -335,7 +345,7 @@ You can explore the following files directly in this repository:
 - [📊 **Netflix Dataset**](./data/netflix.csv) — source data used for the analysis
 - [📄 **PDF Report**](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf) — detailed case-study report
 
-### 💻 Run Locally
+### Option 3: 💻 Run Locally
 
 Clone the repository:
 
