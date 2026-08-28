@@ -317,8 +317,6 @@ Netflix-Business-Case-Study/
 ├── reports/
 │   └── SHIVALING_NETFLIX Business Case Study.pdf
 │
-├── src/
-│
 ├── .gitattributes
 ├── .gitignore
 ├── README.md
