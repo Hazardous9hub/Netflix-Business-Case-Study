@@ -14,6 +14,8 @@
 
 **Quick access:** [📓 View the notebook](./notebooks/Netflix_Business_Case_Study.ipynb) · [![Open Notebook In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Hazardous9hub/Netflix-Business-Case-Study/blob/main/notebooks/Netflix_Business_Case_Study.ipynb) ·  [📊 View the dataset](./data/netflix.csv) · [📄 Read the PDF report](./reports/SHIVALING_NETFLIX%20Business%20Case%20Study.pdf)
 
+</div>
+
 ---
 
 ## ⭐ Project Highlights
@@ -385,9 +387,11 @@ notebooks/Netflix_Business_Case_Study.ipynb
 
 **Shivaling** 🧑‍💻
 
-*Data Analytics | Data Science Enthusiast*
+*Data Science Enthusiast | Data Analytics*
 
-🐙 GitHub: **Hazardous9hub**
+📧 **Email**: shivalingb09@gmail.com  
+🐙 **GitHub**: [Hazardous9hub](https://github.com/Hazardous9hub)  
+💼 **LinkedIn**: [Shivaling Battarki](https://www.linkedin.com/in/shivaling-93000/)
 
 </div>
 
@@ -408,8 +412,13 @@ notebooks/Netflix_Business_Case_Study.ipynb
 
 <div align="center">
 
-⭐ If you find this project useful, consider starring the repository.
+## ⭐ Star This Project
 
-**Made with ❤️ using Python & Data Analytics**
+If you found this analysis helpful or interesting, please consider giving it a star! It helps others discover the work and encourages me to create more content.
 
+<div align="center">
+
+[⭐ Star this Repo](https://github.com/Hazardous9hub/Aerofit-Treadmill-Business-Case-Study/stargazers)
+
+**Made with ❤️ using Python**
 </div>
